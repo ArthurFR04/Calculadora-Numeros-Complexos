@@ -1,0 +1,34 @@
+
+.container {
+    display: grid;
+    justify-content: center;
+}
+
+
+.col {
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.inicio {
+    position: absolute;
+    margin-top: 10;
+    margin-left: 10;
+}
