@@ -1,14 +1,13 @@
 
 
-
 let Xpolar;
 let Ypolar;
 
-// Xretan;
-// Yretan;
+let Xretan;
+let Yretan;
 
 function ToRectangular(Xpolar, Ypolar) {
-    console.log(Xpolar, Ypolar);
+
         let r = parseFloat(Xpolar);
         let ang = parseFloat(Ypolar) * Math.PI / 180;
         let x;
@@ -19,7 +18,7 @@ function ToRectangular(Xpolar, Ypolar) {
         Xretan = x.toFixed(Precision);
         Yretan = y.toFixed(Precision);
     
-        console.log(Xretan, Yretan);
+    //    console.log(Xretan, Yretan);
 }
 
 function ToPolar(Xretan, Yretan) {
@@ -38,4 +37,5 @@ function ToPolar(Xretan, Yretan) {
         Xpolar = r.toPrecision(Precision);
         Ypolar = ang2.toPrecision(Precision);
 
+    //    console.log(Xpolar, Ypolar);
 }

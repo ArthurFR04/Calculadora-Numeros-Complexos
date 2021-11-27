@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../CSS/geral.css">
+    <link rel="stylesheet" href="../CSS/somador.css">
 
     <title>Document</title>
 </head>
@@ -25,11 +26,8 @@
                     <h4>Número 1</h4> 
                 </div>
 
-                <input type="number" placeholder="Real"> <input type="number" placeholder="Ângulo">         <br><br>
+                <input type="number" placeholder="X"> <input type="number" placeholder="Y"> <input type="text" placeholder="A ou J" class="AouJ">         <br><br>
 
-                <div class="row, center">
-                    <button onclick="ToRectangular(inps)" >Converter para retangular</button>
-                </div>
             </div>
             
             <dd></dd>
@@ -39,17 +37,51 @@
                     <h4>Número 2</h4> 
                 </div>
                 
-                <input type="number" placeholder="Real"> <input type="number" placeholder="Imaginário">     <br><br>
+                <input type="number" placeholder="X"> <input type="number" placeholder="Y"> <input type="text" placeholder="A ou J" class="AouJ">     <br><br>
                 
-                <div class="row, center">
-                    <button onclick="ToPolar(inps)" >Converter para polar</button>
-                </div>
             </div>
             
         </div>
-           
-</div>
 
+        <div class="row, center">
+            <button onclick="somar()">Somar</button>
+        </div>
+
+        <br><br>
+
+        <div id="resultados" class="resultado">
+
+            <div class="row center">
+                <h2>Resultados</h2>
+            </div>
+
+            <div class="row center">
+
+                <div class="col">
+                    <div class="row, center">
+                        <h4>Resultado em polar</h4> 
+                    </div>
+
+                    <input type="number" placeholder="X" readonly> <input type="number" placeholder="Y" readonly>     <br><br>
+
+                </div>
+                
+                <dd></dd>
+
+                <div class="col">
+                    <div class="row, center">
+                        <h4>Resultado em retangular</h4> 
+                    </div>
+                    
+                    <input type="number" placeholder="X" readonly> <input type="number" placeholder="Y" readonly>     <br><br>
+                    
+                </div>
+                
+            </div>
+        </div>       
+    </div>
+
+    <script src="../JS/somador.js"></script>
     <script src="../JS/conversor.js"></script>
 
 </body>

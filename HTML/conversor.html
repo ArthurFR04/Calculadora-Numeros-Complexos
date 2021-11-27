@@ -11,6 +11,8 @@
 </head>
 <body>
     <div class="container">
+
+        <a href="index.html" class="links inicio">Inicio</a>
         
         <div class="row, center">
             <h1>Converter de polar para retangular</h1>
@@ -41,7 +43,7 @@
                 <input type="number" placeholder="Real"> <input type="number" placeholder="Imaginário">     <br><br>
                 
                 <div class="row, center">
-                    <button onclick="ToPolar(inps)" >Converter para polar</button>
+                    <button onclick="conv_2()" >Converter para polar</button>
                 </div>
             </div>
             
@@ -54,14 +56,40 @@
 
 <script>
     let inps = document.querySelectorAll('input')
-    
+
     conv_1 = () => {
-        Xpolar = inps[0]
-        Ypolar = inps[1]
+        if (inps[0].value == false || inps[1].value == false) {
+
+            alert('Por favor preencha os campos');
+            return false
+        }
+        
+        Xpolar = inps[0].value
+        Ypolar = inps[1].value
 
         ToRectangular(Xpolar, Ypolar)
+
+
+        inps[2].value = Xretan
+        inps[3].value = Yretan
     }
     
+    conv_2 = () => {
+        if (inps[2].value == false || inps[3].value == false) {
+
+            alert('Por favor preencha os campos');
+            return false
+        }
+
+        Xretan = inps[2].value
+        Yretan = inps[3].value
+
+        ToPolar(Xretan, Yretan)
+
+        inps[0].value = Xpolar
+        inps[1].value = Ypolar
+        
+    }
     
 </script>
 
