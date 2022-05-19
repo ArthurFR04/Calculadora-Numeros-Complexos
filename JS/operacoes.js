@@ -18,9 +18,11 @@ validar = () => {
     for (let i = 0; i < 6; i++) {
 
         if (inps[i].value == false) {
+            if (inps[i].length == 0) {
 
-            alert('Por favor preencha os campos');
-            return false
+                alert('Por favor preencha os campos');
+                return false
+            }
         }
     }
 
