@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,12 @@
     <link rel="stylesheet" href="./CSS/geral.css">
     <link rel="stylesheet" href="./CSS/operacoes.css">
 
-    <title>Document</title>
+    <title>Operações</title>
 </head>
+
 <body>
     <div class="container">
-        
+
         <a href="index.html" class="links inicio">Inicio</a>
 
         <div class="row, center">
@@ -23,26 +25,34 @@
 
             <div class="col">
                 <div class="row, center">
-                    <h4>Número 1</h4> 
+                    <h4>Número 1</h4>
                 </div>
 
-                <input type="number" placeholder="X"> <input type="number" placeholder="Y"> <input type="text" placeholder="A ou J" class="AouJ">         <br><br>
-
+                <input type="number" placeholder="X">
+                <input type="number" placeholder="Y">
             </div>
-            
+            <div class="col"> <br><br><br>
+                <input type="checkbox" name="check_polar_1" onchange="check_inps_p_1()"> Polar <br>
+                <input type="checkbox" name="check_retangular_1" onchange="check_inps_r_1()"> Retangular <br><br>
+            </div>
+
+
             <dd></dd>
 
             <div class="col">
                 <div class="row, center">
-                    <h4>Número 2</h4> 
+                    <h4>Número 2</h4>
                 </div>
-                
-                <input type="number" placeholder="X"> <input type="number" placeholder="Y"> <input type="text" placeholder="A ou J" class="AouJ">     <br><br>
-                
+
+                <input type="number" placeholder="X">
+                <input type="number" placeholder="Y">
             </div>
-            
+            <div class="col"> <br><br><br>
+                <input type="checkbox" name="check_polar_2" onchange="check_inps_p_2()"> Polar <br>
+                <input type="checkbox" name="check_retangular_2" onchange="check_inps_r_2()"> Retangular <br><br>
+            </div>
+
         </div>
-        ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤA = PolarㅤㅤㅤㅤJ = Retangular       <br><br>
         <div class="row, center">
             <button onclick="somar()">Somar</button>                <dd></dd>
 
@@ -66,30 +76,33 @@
 
                 <div class="col">
                     <div class="row, center">
-                        <h4>Resultado em polar</h4> 
+                        <h4>Resultado em polar</h4>
                     </div>
 
-                    <input type="number" placeholder="X" readonly> <input type="number" placeholder="Y" readonly>     <br><br>
+                    <input type="number" placeholder="X" readonly> <input type="number" placeholder="Y" readonly>
+                    <br><br>
 
                 </div>
-                
+
                 <dd></dd>
 
                 <div class="col">
                     <div class="row, center">
-                        <h4>Resultado em retangular</h4> 
+                        <h4>Resultado em retangular</h4>
                     </div>
-                    
-                    <input type="number" placeholder="X" readonly> <input type="number" placeholder="Y" readonly>     <br><br>
-                    
+
+                    <input type="number" placeholder="X" readonly> <input type="number" placeholder="Y" readonly>
+                    <br><br>
+
                 </div>
-                
+
             </div>
-        </div>       
+        </div>
     </div>
 
     <script src="./JS/operacoes.js"></script>
     <script src="./JS/conversor.js"></script>
 
 </body>
+
 </html>
