@@ -1,4 +1,8 @@
 
+input {
+    text-align: center;
+}
+
 .container {
     display: grid;
     justify-content: center;
